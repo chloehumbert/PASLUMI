@@ -1,1 +1,1 @@
-web: ./paslumi
+web: paslumi
