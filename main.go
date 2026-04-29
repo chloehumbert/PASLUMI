@@ -28,6 +28,8 @@ func main() {
 		}
 
 		http.ServeFile(w, r, indexPath)
+	})
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
