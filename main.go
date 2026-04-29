@@ -28,9 +28,10 @@ func main() {
 		}
 
 		http.ServeFile(w, r, indexPath)
-	})
-
-	port := "8080"
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
 	log.Printf("Serveur PASLUMI démarré sur http://localhost:%s\n", port)
 	log.Printf("Appuyez sur CTRL + C pour arrêter le serveur")
 
