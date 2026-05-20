@@ -31,16 +31,6 @@ func main() {
 
 		http.ServeFile(w, r, indexPath)
 	})
-<<<<<<< HEAD
-=======
-
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080"
-	}
-	log.Printf("Serveur PASLUMI démarré sur http://localhost:%s\n", port)
-	log.Printf("Appuyez sur CTRL + C pour arrêter le serveur")
->>>>>>> 940b4ea9f97108b6e7a2fa971a2d1b7b667886d8
 
 	// Try to use PORT env var, otherwise pick a free port in the 8080-8090 range
 	envPort := os.Getenv("PORT")
