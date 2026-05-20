@@ -1,0 +1,24 @@
+﻿:root {
+  --bg-main: #f7f8fb;
+  --bg-alt: #ffffff;
+  --bg-hero-overlay: rgba(0, 0, 0, 0.42);
+  --text-main: #111111;
+  --text-muted: #555555;
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --accent: #00d1ff;
+  --accent-soft: rgba(0, 209, 255, 0.16);
+  --accent-strong: #1e90ff;
+  --surface: rgba(15, 15, 20, 0.94);
+  --surface-soft: rgba(18, 20, 30, 0.96);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.38);
+  --shadow-subtle: 0 10px 35px rgba(0, 0, 0, 0.32);
+  --transition-fast: 0.18s ease-out;
+  --transition-med: 0.3s ease-out;
+  --color-dark-blue: #2c4460;
+  --color-light-blue: #8fa0b5;
+  --color-gold: #c3a466;
+  --color-text: #e0efff;
+}

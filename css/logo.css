@@ -1,0 +1,43 @@
+﻿.light-source {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: perspective(20px) rotateX(15deg) skewX(-10deg);
+  z-index: 10;
+}
+
+.light-base {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-gold);
+  border-radius: 50% 50% 0 0;
+}
+
+.light-glow {
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: 2.5px;
+}
+
+.light-ray {
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background-color: var(--color-gold);
+}
+
+.ray-1 {
+  transform: rotate(30deg);
+  top: -5px;
+  right: -3px;
+}
+
+.ray-2 {
+  transform: rotate(-10deg);
+  top: -3px;
+  right: -6px;
+}

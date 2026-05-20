@@ -1,0 +1,32 @@
+﻿.auth-form .form-field label {
+  letter-spacing: 0.06em;
+}
+
+.auth-hint {
+  color: rgba(210, 220, 255, 0.82);
+  margin-top: 2px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.paslumi-logo-container {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  overflow: visible;
+  flex-shrink: 0;
+  transform: scale(1.2);
+}
+
+.buildings {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 35px;
+  height: 28px;
+  background-color: var(--color-dark-blue);
+  clip-path: polygon(0% 100%, 0% 50%, 15% 50%, 15% 20%, 40% 20%, 50% 0%, 60% 20%, 80% 20%, 80% 50%, 100% 50%, 100% 100%);
+  transform: perspective(50px) rotateX(5deg) skewX(-10deg);
+}

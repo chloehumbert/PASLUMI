@@ -1,0 +1,24 @@
+﻿.hero-text h1 {
+  font-size: clamp(2.4rem, 3vw, 3.1rem);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(232, 235, 255, 0.9);
+  margin-bottom: 10px;
+}
+
+.hero-body {
+  font-size: 0.98rem;
+  color: rgba(215, 221, 255, 0.92);
+  max-width: 520px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}

@@ -1,0 +1,14 @@
+﻿.gallery-img {
+  position: relative;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+}
+
+.placeholder-img {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(0, 209, 255, 0.08)), radial-gradient(circle at top left, rgba(0, 209, 255, 0.5), transparent 55%), radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.9), #020205 70%);
+  background-size: cover;
+  background-position: center;
+}

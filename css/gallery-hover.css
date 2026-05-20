@@ -1,0 +1,36 @@
+﻿.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 55%);
+  opacity: 0;
+  transition: opacity var(--transition-med);
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  inset: auto 12px 10px 12px;
+  z-index: 1;
+  transform: translateY(8px);
+  opacity: 0;
+  transition: transform var(--transition-med), opacity var(--transition-med);
+}
+
+.gallery-item h3 {
+  font-size: 0.96rem;
+  margin-bottom: 3px;
+}
+
+.gallery-item p {
+  font-size: 0.8rem;
+  color: rgba(210, 222, 255, 0.9);
+}
+
+.gallery-item:hover figcaption {
+  transform: translateY(0);
+  opacity: 1;
+}

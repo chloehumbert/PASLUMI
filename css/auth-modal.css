@@ -1,0 +1,40 @@
+﻿.auth-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-med);
+  z-index: 60;
+  padding: 16px;
+}
+
+.auth-modal[data-open='true'] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.auth-dialog {
+  width: min(420px, 96vw);
+  position: relative;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+  padding: 20px 18px 18px;
+}
+
+.auth-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f7f8ff;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+﻿.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 22px 0 24px;
+  background: radial-gradient(circle at top, rgba(0, 209, 255, 0.12), transparent 55%), #020209;
+  color: rgba(213, 221, 255, 0.86);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: rgba(210, 222, 255, 0.9);
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.socials {
+  display: flex;
+  gap: 6px;
+}
+
+.social-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: radial-gradient(circle, #ffffff, rgba(255, 255, 255, 0.1));
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
