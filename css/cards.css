@@ -24,6 +24,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  aspect-ratio: 4 / 3;
 }
 
 .card p {
