@@ -1,0 +1,33 @@
+﻿.hero-highlight {
+  background: radial-gradient(circle at top left, rgba(0, 209, 255, 0.12), transparent 55%), var(--surface);
+  border-radius: 22px;
+  box-shadow: var(--shadow-soft);
+  padding: 24px 24px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-highlight h2 {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+}
+
+.hero-highlight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #dce4ff;
+}
+
+.hero-highlight li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  margin-right: 8px;
+}

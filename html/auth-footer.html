@@ -1,0 +1,39 @@
+<div class="auth-modal" id="auth-modal" aria-hidden="true" data-open="false">
+  <div class="auth-dialog card">
+    <button type="button" class="auth-close" aria-label="Fermer la fenêtre">×</button>
+    <div class="auth-tabs">
+      <button type="button" class="auth-tab active" data-mode="login">Connexion</button>
+      <button type="button" class="auth-tab" data-mode="signup">Créer un compte</button>
+    </div>
+    <form class="auth-form" id="auth-form" autocomplete="on">
+      <div class="form-field auth-field auth-field-name is-hidden"><label for="auth-name">Nom complet</label><input id="auth-name" type="text" name="name" placeholder="Prénom Nom" /></div>
+      <div class="form-field auth-field"><label for="auth-email">Email</label><input id="auth-email" type="email" name="email" placeholder="vous@example.com" required /></div>
+      <div class="form-field auth-field"><label for="auth-password">Mot de passe</label><input id="auth-password" type="password" name="password" placeholder="8 caractères ou plus" required /></div>
+      <div class="form-field auth-field auth-field-confirm is-hidden"><label for="auth-confirm">Confirmer le mot de passe</label><input id="auth-confirm" type="password" name="confirm" placeholder="Répétez votre mot de passe" /></div>
+      <p id="auth-subtitle" class="small">Accédez à votre espace client.</p>
+      <button type="submit" class="btn primary full-width" id="auth-submit">Se connecter</button>
+      <p id="auth-hint" class="small auth-hint">Mot de passe oublié ? Contactez support@paslumi.fr.</p>
+    </form>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="logo"><span class="logo-mark"></span><span class="logo-text">PASLUMI</span></div>
+      <p class="small">Dalles lumineuses LED hautes performances pour l’intérieur et l’extérieur.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#hero">Accueil</a>
+      <a href="#produits">Produits</a>
+      <a href="#galerie">Réalisations</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+    </div>
+    <div class="footer-meta">
+      <p class="small">© <span id="year"></span> PASLUMI. Tous droits réservés.</p>
+      <div class="socials"><span class="social-dot"></span><span class="social-dot"></span><span class="social-dot"></span></div>
+    </div>
+  </div>
+</footer>

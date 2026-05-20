@@ -1,0 +1,23 @@
+﻿.auth-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.auth-tab {
+  flex: 1;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f5f6ff;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.auth-tab.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 14px rgba(0, 209, 255, 0.45);
+  background: linear-gradient(135deg, rgba(0, 209, 255, 0.12), rgba(0, 209, 255, 0.04));
+}

@@ -1,0 +1,49 @@
+﻿.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 0.9rem;
+  color: #f1f3fa;
+}
+
+.main-nav a {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, var(--accent), var(--accent-strong));
+  transition: width var(--transition-fast);
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}

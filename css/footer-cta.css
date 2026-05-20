@@ -1,0 +1,30 @@
+﻿.floating-cta {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 35;
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  color: #050509;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(0, 209, 255, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.floating-cta::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+  box-shadow: 0 0 12px #ffffff;
+}
+
+.floating-cta:hover {
+  transform: translateY(-1px);
+}
