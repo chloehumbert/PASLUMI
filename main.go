@@ -6,8 +6,26 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"os/exec"
 	"path/filepath"
+	"runtime"
 )
+
+func openBrowser(url string) {
+	var cmd *exec.Cmd
+	switch runtime.GOOS {
+	case "windows":
+		cmd = exec.Command("rundll32", "url.dll,FileProtocolHandler", url)
+	case "darwin":
+		cmd = exec.Command("open", url)
+	default:
+		cmd = exec.Command("xdg-open", url)
+	}
+
+	if err := cmd.Start(); err != nil {
+		log.Printf("Impossible d'ouvrir le navigateur : %v", err)
+	}
+}
 
 func main() {
 	// Dossier racine des fichiers du site (index.html, styles.css, script.js)
@@ -49,8 +67,10 @@ func main() {
 			continue
 		}
 
-		log.Printf("Serveur PASLUMI démarré sur http://localhost:%s\n", port)
+		url := fmt.Sprintf("http://localhost:%s", port)
+		log.Printf("Serveur PASLUMI démarré sur %s\n", url)
 		log.Printf("Appuyez sur CTRL + C pour arrêter le serveur")
+		openBrowser(url)
 
 		if err := http.Serve(ln, nil); err != nil {
 			log.Fatalf("Erreur serveur: %v", err)
